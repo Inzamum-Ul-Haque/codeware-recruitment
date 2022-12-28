@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Button.css";
 
 const Button = () => {
   const [value, setValue] = useState("Click Me");
@@ -14,14 +15,7 @@ const Button = () => {
   };
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="btn-container">
       <button onClick={handleClick}>{value}</button>
     </div>
   );
