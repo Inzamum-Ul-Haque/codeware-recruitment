@@ -29,7 +29,7 @@ const placeOrder = {
 };
 
 document.getElementById("post-btn").addEventListener("click", () => {
-  fetch("http://localhost:5000/order", {
+  fetch("https://server-inzamum-ul-haque.vercel.app/order", {
     method: "POST",
     headers: {
       "content-type": "application/json",
